@@ -34,8 +34,22 @@
 # What was the name of the function we have seen to check the length of a container?  Use your CLI to access the Python documentation and get help(len).
 
 
+from ast import arg
+from posixpath import split
+import re
+
+
 def one(input1, input2):
-    return ""
+    x = len(input1)
+    y = len(input2)
+    if x > y:
+        print(input1)
+        return input1
+    elif y > x:
+        print(input2)
+        return input2
+    else: 
+        return input1 + " " + input2 
 
    # <QUESTION 2>
 
@@ -61,7 +75,14 @@ def one(input1, input2):
 
 
 def two(input):
-    return ""
+    input =  input.lower()      #anasbertsumrani
+    x = input.split("bert")
+    print(x)
+
+   
+    
+
+    
 
 
     # <QUESTION 3>
@@ -85,6 +106,21 @@ def two(input):
 
 
 def three(arg1):
+    x = arg1 
+    if x % 3 == 0 and x % 5 ==0 :
+        return "fizz" + "buzz"
+    if x % 3 == 0 :
+        return "fizz"
+    if x % 5 == 0:
+        return "buzz" 
+    else :
+        return "null"  
+    
+
+
+
+    
+
     return ""
 
     # <QUESTION 4>
@@ -161,6 +197,7 @@ def five(input):
 
 
 def six(input):
+   
     return ""
 
     # <QUESTION 7>
@@ -198,6 +235,8 @@ def seven(input):
 
 
 def eight(input):
+    list = [0,1,2,3,4,5,6,7,8,9]
+    input *  1
     return ""
 
     # <QUESTION 9>
